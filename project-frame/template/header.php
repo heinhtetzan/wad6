@@ -1,3 +1,5 @@
+<?php require_once "template/base.php"; ?>
+<?php require_once "template/functions.php"; ?>
 <!doctype html>
 <html lang="en">
 <head>
